@@ -87,7 +87,6 @@ body {
   width: 32px;
   height: 32px;
   background-color: #FFCBD8;
-  background-image: url("/Gllacy-logo.svg");
 }
 
 .page-submenu-container {
@@ -166,13 +165,13 @@ display: none;
 }
 
 .blog-card {
-  background-image: url("/blog.jpg");
+  background-image: url("/images/background-blog.jpg");
 }
 
 /* секция доставки */
 
 .delivery {
-  background-image: url("/delivery.jpg");
+  background-image: url("/images/background-delivery.jpg");
 }
 
 .delivery-container {
@@ -186,7 +185,7 @@ display: none;
 /* секция обратная связь */
 
 .feedback {
-  background-image: url("/feedback.jpg");
+  background-image: url("/images/background-feedback.jpg");
 }
 
 .information-container {
