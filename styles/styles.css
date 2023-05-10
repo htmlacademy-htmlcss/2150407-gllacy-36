@@ -1,0 +1,253 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  background-color: #FEAFC3;
+}
+
+/* шапка сайта */
+
+.page-header {
+  margin: 0 auto;
+  width: 1170px;
+  background-color: #b9dc1a;
+  flex: 1 0 auto;
+}
+
+.page-navigation {
+  display: flex;
+  padding: 24px 0;
+  align-items: center;
+}
+
+.page-navigation-link-logo {
+  margin-right: 16px;
+}
+
+.navigation-services-container {
+  margin-right: 164px;
+}
+
+.page-navigation-list-services {
+  display: flex;
+}
+
+.navigation-container {
+  display: flex;
+}
+
+.page-navigation-list-user {
+  display: flex;
+}
+
+.page-navigation-link {
+  display: block;
+}
+
+.page-navigation-link-search,
+.page-navigation-link-basket {
+  width: 32px;
+  height: 32px;
+  background-color: #FFCBD8;
+  background-image: url("/Gllacy-logo.svg");
+}
+
+.page-submenu-container {
+  display: none;
+}
+
+.popover {
+  display: none;
+}
+
+/* основное содержимое index */
+
+.main-index {
+  margin: 0 auto;
+  width: 1170px;
+  background-color: #bcbcc6;
+}
+
+.main-catalog {
+  margin: 0 auto;
+  width: 1170px;
+  background-color: #bcbcc6;
+}
+
+/* секция слайдера */
+
+.slider-item {
+display: none;
+}
+
+.slider-item-current {
+  display: flex;
+}
+
+.slider-footer {
+  display: flex;
+}
+
+.slider-pagination {
+  display: flex;
+}
+
+/* секция предложений */
+
+.offers-title {
+  width: 527px;
+}
+
+.content-container {
+  display: flex;
+}
+
+.products-cards-list {
+  display: flex;
+}
+
+/* секция информации */
+
+.information-title {
+  width: 995px;
+}
+
+.information-description-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.information-description {
+  width: 505px;
+}
+
+/* секция блога */
+
+.blog-container {
+  display: flex;
+}
+
+.blog-card {
+  background-image: url("/blog.jpg");
+}
+
+/* секция доставки */
+
+.delivery {
+  background-image: url("/delivery.jpg");
+}
+
+.delivery-container {
+  display: flex;
+}
+
+.delivery-description-container {
+  width: 371px;
+}
+
+/* секция обратная связь */
+
+.feedback {
+  background-image: url("/feedback.jpg");
+}
+
+.information-container {
+  width: 343px;
+}
+
+/* секция каталога */
+
+.breadcrumbs {
+  display: flex;
+}
+
+.filter-products {
+  display: flex;
+  width: 823px;
+}
+
+.filter {
+  display: flex;
+}
+
+.products-cards-list {
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.buttons-container {
+  display: flex;
+}
+
+.pagination-container {
+  display: flex;
+}
+
+.pagination {
+  display: flex;
+}
+
+/* подвал сайта */
+
+.page-footer {
+  display: flex;
+  margin: 0 auto;
+  width: 1170px;
+  background-color: #ffffff;
+  flex: 0 0 auto;
+}
+
+.footer-container-center {
+  width: 355px;
+}
+
+.page-footer-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* модальное окно */
+
+.modal-container-close {
+  display: none;
+}
