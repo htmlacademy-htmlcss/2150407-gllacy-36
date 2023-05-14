@@ -171,6 +171,21 @@ display: none;
 
 /* секция информации */
 
+.information {
+  margin-bottom: 80px;
+  padding: 24px;
+  border-radius: 16px;
+  background-image: url("/images/background-information.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.information-container {
+  padding: 56px 40px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
 .information-title {
   width: 995px;
 }
@@ -186,12 +201,37 @@ display: none;
 
 /* секция блога */
 
+.blog {
+  margin-bottom: 80px;
+}
+
 .blog-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .blog-card {
+  width: 570px;
+  padding-left: 32px;
+  border-radius: 16px;
   background-image: url("/images/background-blog.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog-subscription {
+  width: 570px;
+  padding: 6px;
+  border-radius: 16px;
+  background-image: url("/images/background-subscription.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog-subscription-container {
+  padding: 26px;
+  border-radius: 16px;
+  background-color: #ffffff;
 }
 
 /* секция доставки */
