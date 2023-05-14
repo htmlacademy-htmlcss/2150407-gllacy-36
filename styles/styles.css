@@ -1,10 +1,39 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
 html {
   height: 100%;
 }
 
 body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   height: 100%;
   margin: 0;
+  color: #000000;
+  background-color: #FEAFC3;
 }
 
 *,
@@ -48,7 +77,6 @@ body {
 .page-header {
   margin: 0 auto;
   width: 1170px;
-  background-color: #b9dc1a;
   flex: 1 0 auto;
 }
 
@@ -102,13 +130,11 @@ body {
 .main-index {
   margin: 0 auto;
   width: 1170px;
-  background-color: #bcbcc6;
 }
 
 .main-catalog {
   margin: 0 auto;
   width: 1170px;
-  background-color: #bcbcc6;
 }
 
 /* секция слайдера */
@@ -232,7 +258,6 @@ display: none;
   display: flex;
   margin: 0 auto;
   width: 1170px;
-  background-color: #ffffff;
   flex: 0 0 auto;
 }
 
