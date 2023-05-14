@@ -197,25 +197,47 @@ display: none;
 /* секция доставки */
 
 .delivery {
+  margin-bottom: 80px;
+  padding: 64px;
+  border-radius: 16px;
   background-image: url("/images/background-delivery.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .delivery-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 135px;
 }
 
 .delivery-description-container {
+  margin-left: 36px;
   width: 371px;
+}
+
+.delivery-form-container {
+  width: 500px;
+  padding: 40px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 /* секция обратная связь */
 
 .feedback {
+  padding: 64px;
+  border-radius: 16px;
   background-image: url("/images/background-feedback.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.information-container {
+.feedback-information-container {
   width: 343px;
+  padding: 40px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
 }
 
 /* секция каталога */
