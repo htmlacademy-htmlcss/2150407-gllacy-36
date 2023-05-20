@@ -154,7 +154,7 @@
                   <img class="slider-image" src="/images/products/ice-cream-strawberry.png" width="367" height="507" alt="Рожок нежного пломбира с клубничным джемом." >
                 </div>
               </li>
-              <li class="slider-item">
+              <li class="slider-item slider-item-current">
                 <div class="slider-description-container">
                   <h3 class="slider-description-title">Сливочное мороженое со вкусом банана</h3>
                   <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
@@ -164,7 +164,7 @@
                   <img class="slider-image" src="/images/products/ice-cream-banana.png" width="367" height="507" alt="Рожок сливочного мороженого со вкусом банана." >
                 </div>
               </li>
-              <li class="slider-item">
+              <li class="slider-item slider-item-current">
                 <div class="slider-description-container">
                   <h3 class="slider-description-title">Карамельный пломбир с маршмеллоу</h3>
                   <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
@@ -253,44 +253,48 @@
           <div class="products-cards">
             <ul class="clear-list products-cards-list">
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image">
-                    <img class="product-image" src="#" width="168" height="168" alt="Малиновое мороженое.">
-                  </div>
-                  <h3 class="product-title">Малинка</h3>
-                  <p class="product-description">Сливочное мороженое с малиновым джемом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-raspberry.jpg" width="168" height="168" alt="Малиновое мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Малинка</a>
+                <p class="product-description">Сливочное мороженое с малиновым джемом</p>
+                <div class="product-information-container">
                   <span class="product-price">310 ₽/кг</span>
-                </a>
+                  <button type="button"></button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image">
-                    <img class="product-image" src="#" width="168" height="168" alt="Фисташковое мороженое.">
-                  </div>
-                  <h3 class="product-title">Фисташка</h3>
-                  <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-pistachio.jpg" width="168" height="168" alt="Фисташковое мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Фисташка</a>
+                <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
+                <div class="product-information-container">
                   <span class="product-price">340 ₽/кг</span>
-                </a>
+                  <button type="button"></button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image">
-                    <img class="product-image" src="#" width="168" height="168" alt="Черничное мороженое.">
-                  </div>
-                  <h3 class="product-title">Черника</h3>
-                  <p class="product-description">Крем-брюле с черничным джемом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-blueberry.jpg" width="168" height="168" alt="Черничное мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Черника</a>
+                <p class="product-description">Крем-брюле с черничным джемом</p>
+                <div class="product-information-container">
                   <span class="product-price">330 ₽/кг</span>
-                </a>
+                  <button type="button"></button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image">
-                    <img class="product-image" src="#" width="168" height="168" alt="Бабл-гам мороженое.">
-                  </div>
-                  <h3 class="product-title">Бабл-гам</h3>
-                  <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-bubble-gum.jpg" width="168" height="168" alt="Бабл-гам мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Бабл-гам</a>
+                <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
+                <div class="product-information-container">
                   <span class="product-price">320 ₽/кг</span>
-                </a>
+                  <button type="button"></button>
+                </div>
               </li>
             </ul>
           </div>
@@ -298,12 +302,12 @@
         <section class="information">
           <div class="information-container">
             <h2 class="information-title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-            <div class="information-description-container">
-              <p class="information-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
-              <p class="information-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
-              <p class="information-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
-              <p class="information-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
-            </div>
+            <ul class="clear-list information-description-list">
+              <li class="information-description">Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+              <li class="information-description">Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми нас связывает долговременное сотрудничество.</li>
+              <li class="information-description">Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и добавки произведены из натурального сырья.</li>
+              <li class="information-description">Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</li>
+            </ul>
           </div>
         </section>
         <section class="blog">

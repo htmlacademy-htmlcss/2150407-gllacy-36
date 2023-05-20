@@ -169,6 +169,43 @@ display: none;
   display: flex;
 }
 
+.product-card-item {
+  position: relative;
+  padding: 0 40px 28px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.product-card-item::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: calc(100% - 51px);
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  z-index: -1;
+}
+
+.product-image-container {
+  width: 168px;
+  height: 168px;
+  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+}
+
 /* секция информации */
 
 .information {
@@ -190,7 +227,7 @@ display: none;
   width: 995px;
 }
 
-.information-description-container {
+.information-description-list {
   display: flex;
   flex-wrap: wrap;
 }
