@@ -61,8 +61,7 @@
                     <span class="visually-hidden">Поиск.</span>
                     <div class="popover popover-search">
                       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                        <label class="visually-hidden" for="search">Поиск по сайту.</label>
-                        <input class="input-field" type="search" name="search" id="search" required placeholder="Поиск по сайту">
+                        <input class="input-field" type="search" name="search" aria-label="Поиск по сайту." required placeholder="Поиск по сайту">
                       </form>
                     </div>
                   </a>
@@ -72,10 +71,8 @@
                   <div class="popover popover-login">
                     <span class="popover-title">Личный кабинет</span>
                     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                      <label class="visually-hidden" for="email">Введите ваш e-mail.</label>
-                      <input class="input-field" type="email" name="email" id="email" required placeholder="email@example.com">
-                      <label class="visually-hidden" for="password">Введите ваш пароль.</label>
-                      <input class="input-field" type="password" name="password" id="password" required placeholder="......">
+                      <input class="input-field" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="email@example.com">
+                      <input class="input-field" type="password" name="password" aria-label="Введите ваш пароль." required placeholder="......">
                       <button class="button subscription-form-button" type="submit">Войти</button>
                     </form>
                     <div class="login-support">
@@ -221,7 +218,7 @@
         </section>
         <section class="offers">
           <div class="title-container">
-            <h2 class="offers-title">Заказывайте мороженое и получайте подарки!</h2>
+            <h2 class="section-title offers-title">Заказывайте мороженое и получайте подарки!</h2>
           </div>
           <div class="content-container">
             <div class="offers-card">
@@ -248,7 +245,7 @@
         </section>
         <section class="products">
           <div class="title-container">
-            <h2 class="offers-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
+            <h2 class="section-title products-title">Попробуйте самые популярные вкусы нашего мороженого</h2>
           </div>
           <div class="products-cards">
             <ul class="clear-list products-cards-list">
@@ -260,7 +257,9 @@
                 <p class="product-description">Сливочное мороженое с малиновым джемом</p>
                 <div class="product-information-container">
                   <span class="product-price">310 ₽/кг</span>
-                  <button type="button"></button>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
                 </div>
               </li>
               <li class="product-card-item">
@@ -271,7 +270,9 @@
                 <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
                 <div class="product-information-container">
                   <span class="product-price">340 ₽/кг</span>
-                  <button type="button"></button>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
                 </div>
               </li>
               <li class="product-card-item">
@@ -279,10 +280,12 @@
                   <img class="product-image" src="/images/products/product-blueberry.jpg" width="168" height="168" alt="Черничное мороженое.">
                 </div>
                 <a class="link product-title" href="catalog.html">Черника</a>
-                <p class="product-description">Крем-брюле с черничным джемом</p>
+                <p class="product-description">Крем-брюле<br>с черничным джемом</p>
                 <div class="product-information-container">
                   <span class="product-price">330 ₽/кг</span>
-                  <button type="button"></button>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
                 </div>
               </li>
               <li class="product-card-item">
@@ -290,10 +293,12 @@
                   <img class="product-image" src="/images/products/product-bubble-gum.jpg" width="168" height="168" alt="Бабл-гам мороженое.">
                 </div>
                 <a class="link product-title" href="catalog.html">Бабл-гам</a>
-                <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
+                <p class="product-description">Ванильный пломбир<br>со сладкой посыпкой</p>
                 <div class="product-information-container">
                   <span class="product-price">320 ₽/кг</span>
-                  <button type="button"></button>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
                 </div>
               </li>
             </ul>
@@ -321,8 +326,7 @@
               <div class="blog-subscription-container">
                 <p class="blog-blog-description">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label class="visually-hidden" for="email">Введите ваш e-mail.</label>
-                  <input class="input-field" type="email" name="email" id="email" required placeholder="email@example.com">
+                  <input class="input-field" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="email@example.com">
                   <button class="button subscription-form-button" type="submit">Отправить</button>
                 </form>
               </div>
@@ -339,16 +343,13 @@
               <p class="delivery-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
               <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="frame-delivery-input frame-date-input">
-                  <label class="delivery-input" for="date">Дата</label>
-                  <input class="control-modal-input" type="text" id="date" name="date" required placeholder="01.04.2020">
+                  <input class="control-modal-input" type="text" aria-label="Дата." name="date" required placeholder="01.04.2020">
                 </div>
                 <div class="frame-delivery-input frame-date-input">
-                  <label class="delivery-input" for="telephone">Телефон</label>
-                  <input class="control-modal-input" type="tel" id="telephone" name="telephone" required placeholder="+7 800 999-00-00">
+                  <input class="control-modal-input" type="tel" aria-label="Телефон." name="telephone" required placeholder="+7 800 999-00-00">
                 </div>
                 <div class="frame-delivery-input frame-date-input">
-                  <label class="delivery-input" for="address">Адрес</label>
-                  <input class="control-modal-input" type="text" id="address" name="address" required placeholder="ул. Большая Конюшенная, 19/8">
+                  <input class="control-modal-input" type="text" aria-label="Адрес." name="address" required placeholder="ул. Большая Конюшенная, 19/8">
                 </div>
                 <button class="button subscription-form-button" type="submit">Отправить</button>
               </form>
@@ -414,12 +415,9 @@
             <h2 class="modal-title">Мы обязательно ответим вам!</h2>
               <div class="modal-form-container">
                 <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <label class="visually-hidden" for="username">Ваше имя и фамилия.</label>
-                  <input class="control-modal-input input-image-username" type="text" id="username" name="username" required placeholder="Имя и фамилия">
-                  <label class="visually-hidden" for="email">Введите ваш e-mail.</label>
-                  <input class="input-field" type="email" name="email" id="email" required placeholder="email@example.com">
-                  <label class="visually-hidden" for="comment">Комментарий к заказу.</label>
-                  <input class="control-modal-input input-image-username" type="text" id="comment" name="comment" placeholder="В свободной форме">
+                  <input class="control-modal-input input-image-username" type="text" aria-label="Ваше имя и фамилия." name="username" required placeholder="Имя и фамилия">
+                  <input class="input-field" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="email@example.com">
+                  <input class="control-modal-input input-image-username" type="text" aria-label="Комментарий к заказу." name="comment" placeholder="В свободной форме">
                   <button class="button modal-button" type="submit">Отправить</button>
                 </form>
               </div>

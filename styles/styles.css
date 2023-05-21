@@ -64,12 +64,32 @@ body {
   color: #000000;
 }
 
+.button {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   min-height: 100%;
   background-color: #FEAFC3;
+}
+
+.section-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  color: #2d3440;
 }
 
 /* шапка сайта */
@@ -158,6 +178,63 @@ display: none;
 /* секция предложений */
 
 .offers-title {
+  margin: 80px auto 55px;
+  width: 434px;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.offers-card {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 570px;
+  background: #ff7799;
+  border-radius: 16px;
+}
+
+.offers-description-container {
+  padding: 36px 0 36px 36px;
+}
+
+.offers-description-title {
+  margin: 0 0 28px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+}
+
+.offers-description {
+  margin-bottom: 28px;
+  padding: 0;
+  color: #2d3440;
+}
+
+.button-offers {
+  padding: 12px 32px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 176px;
+  background: #fcfcfc;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 26px;
+  color: #2d3440;
+}
+
+/* секция продуктов */
+
+.products {
+  margin-bottom: 80px;
+}
+
+.products-title {
+  margin: 81px auto 56px;
   width: 527px;
 }
 
@@ -204,6 +281,47 @@ display: none;
   height: auto;
   min-height: 100%;
   object-fit: cover;
+}
+
+.product-title {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.product-description {
+  margin: 8px 0 16px;
+  color: #565c66;
+}
+
+.product-information-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 190px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2d3440;
+}
+
+.button-into-basket {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #ff2f64;
+  clip-path: circle(50% at 50% 50%);
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 /* секция информации */
