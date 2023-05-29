@@ -414,15 +414,53 @@ padding: 100px 0 0 70px;
 
 .information-title {
   width: 995px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
 }
 
 .information-description-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  color: #565C66;
 }
 
 .information-description {
-  width: 505px;
+  position: relative;
+  width: 442px;
+  margin-left: 64px;
+  margin-bottom: 40px;
+}
+
+.information-description::before {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: -64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 2px solid #2D3440;
+}
+
+.icon-ice-cream::before {
+  background-image: url("/images/graphics/icon-ice-cream.svg");
+}
+
+.icon-leaf::before {
+  background-image: url("/images/graphics/icon-leaf.svg");
+}
+
+.icon-thermometer::before {
+  background-image: url("/images/graphics/icon-thermometer.svg");
+}
+
+.icon-cow::before {
+  background-image: url("/images/graphics/icon-cow.svg");
 }
 
 /* секция блога */
