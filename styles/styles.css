@@ -731,18 +731,100 @@ padding: 100px 0 0 70px;
 
 .page-footer {
   display: flex;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 48px auto;
   width: 1170px;
   flex: 0 0 auto;
 }
 
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 144px;
+}
+
+.link-social {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  outline: 3px solid rgba(252, 252, 252, 0.3);
+  outline-offset: -1px;
+}
+
+.link-social-telegram {
+  background-image: url("/images/telegram.svg");
+}
+
+.link-social-vk {
+  background-image: url("/images/vk.svg");
+}
+
+.link-social-youtube {
+  background-image: url("/images/youtube.svg");
+}
+
 .footer-container-center {
+  margin-left: 150px;
   width: 355px;
 }
 
 .page-footer-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px 24px;
+}
+
+.page-footer-item {
+  min-width: 126px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.bold-font {
+  position: relative;
+  font-weight: 700;
+}
+
+.bold-font::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 13px;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  background-image: url("/images/graphics/heart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.website-link {
+  width: 93px;
+  height: 27px;
+  display: block;
+  background-image: url("/images/graphics/logo-htmlacademy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.website-link-description {
+  position: relative;
+  margin: 15px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.website-link-description::before {
+  position: absolute;
+  content: "";
+  width: 82px;
+  height: 1px;
+  bottom: 0;
+  right: 46px;
+  background-color: #2d3440;
+  opacity: 0.5;
 }
 
 /* модальное окно */
