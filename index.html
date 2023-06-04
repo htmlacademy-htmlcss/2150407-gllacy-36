@@ -78,7 +78,7 @@
                     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
                       <input class="input-field" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="email@example.com">
                       <input class="input-field" type="password" name="password" aria-label="Введите ваш пароль." required placeholder="......">
-                      <button class="button subscription-form-button" type="submit">Войти</button>
+                      <button class="button button-overall-size button-outline-pink subscription-form-button" type="submit">Войти</button>
                     </form>
                     <div class="login-support">
                       <a class="link" href="#">Забыли пароль?</a>
@@ -147,12 +147,18 @@
         <section class="slider">
           <h2 class="visually-hidden">Популярные товары.</h2>
           <div class="slider-container">
+            <button class="button slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий товар.</span>
+            </button>
+            <button class="button slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий товар.</span>
+            </button>
             <ul class="clear-list slider-list">
               <li class="slider-item slider-item-current">
                 <div class="slider-description-container">
                   <h3 class="slider-description-title">Нежный пломбир с клубничным джемом</h3>
                   <p class="slider-description">Натуральное мороженое из свежих сливок<br>и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-                  <button class="button button-order" type="button">Заказать</button>
+                  <button class="button button-overall-size button-outline-white button-order" type="button">Заказать</button>
                 </div>
                 <div class="slider-image-container">
                   <img class="slider-image" src="/images/products/ice-cream-strawberry.png" width="367" height="507" alt="Рожок нежного пломбира с клубничным джемом." >
@@ -162,7 +168,7 @@
                 <div class="slider-description-container">
                   <h3 class="slider-description-title">Сливочное мороженое со вкусом банана</h3>
                   <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-                  <button class="button button-order" type="button">Заказать</button>
+                  <button class="button button-overall-size button-outline-white button-order" type="button">Заказать</button>
                 </div>
                 <div class="slider-image-container">
                   <img class="slider-image" src="/images/products/ice-cream-banana.png" width="367" height="507" alt="Рожок сливочного мороженого со вкусом банана." >
@@ -172,51 +178,45 @@
                 <div class="slider-description-container">
                   <h3 class="slider-description-title">Карамельный пломбир с маршмеллоу</h3>
                   <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-                  <button class="button button-order" type="button">Заказать</button>
+                  <button class="button button-overall-size button-outline-white button-order" type="button">Заказать</button>
                 </div>
                 <div class="slider-image-container">
                   <img class="slider-image" src="/images/products/ice-cream-marshmallow.png" width="367" height="507" alt="Рожок карамельного пломбира с маршмеллоу." >
                 </div>
               </li>
             </ul>
-            <button class="slider-button slider-prev" type="button">
-              <span class="visually-hidden">Предыдущий товар.</span>
-            </button>
-            <button class="slider-button slider-next" type="button">
-              <span class="visually-hidden">Следующий товар.</span>
-            </button>
           </div>
           <div class="slider-footer">
             <ol class="clear-list slider-pagination">
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button slider-pagination-button-current" type="button">
+                <button class="button slider-pagination-button slider-pagination-button-current" type="button">
                   <span class="visually-hidden">1 товар.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="button slider-pagination-button" type="button">
                   <span class="visually-hidden">2 товар.</span>
                 </button>
               </li>
               <li class="slider-pagination-item">
-                <button class="slider-pagination-button" type="button">
+                <button class="button slider-pagination-button" type="button">
                   <span class="visually-hidden">3 товар.</span>
                 </button>
               </li>
             </ol>
             <ul class="clear-list footer-social-list">
               <li class="footer-social-item">
-                <a class="link button-social button-social-telegram" href="https://t.me/htmlacademy">
+                <a class="link link-social link-social-telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм.</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="link button-social button-social-vk" href="https://vk.com/htmlacademy">
+                <a class="link link-social link-social-vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">ВКонтакте.</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="link button-social button-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="link link-social link-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб.</span>
                 </a>
               </li>
@@ -232,7 +232,7 @@
               <div class="offers-description-container">
                 <h3 class="offers-description-title">Малинка даром!</h3>
                 <p class="offers-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                <button class="button button-offers" type="button">Хочу подарок</button>
+                <button class="button button-overall-size button-outline-white button-offers" type="button">Хочу подарок</button>
               </div>
               <div class="offers-image-container">
                 <img class="offers-image" src="/images/products/raspberry.png" width="219" height="268" alt="Полный рожок малины." >
@@ -242,7 +242,7 @@
               <div class="offers-description-container">
                 <h3 class="offers-description-title">Маршмеллоу даром!</h3>
                 <p class="offers-description">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-                <button class="button button-offers" type="button">Хочу подарок</button>
+                <button class="button button-overall-size button-outline-white button-offers" type="button">Хочу подарок</button>
               </div>
               <div class="offers-image-container">
                 <img class="offers-image" src="/images/products/marshmallow.png" width="219" height="268" alt="Полный рожок маршмеллоу.">
@@ -334,7 +334,7 @@
                 <p class="blog-blog-description">Подпишитесь на нашу сладкую рассылку и будьте всегда<br>в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
                   <input class="input-blog" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="email@example.com">
-                  <button class="button subscription-form-button" type="submit">Отправить</button>
+                  <button class="button button-overall-size button-outline-pink subscription-form-button" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
@@ -351,7 +351,10 @@
               <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="delivery-inputs-container">
                   <div class="frame-delivery-input frame-date-input">
-                    <span class="text-input">Дата</span>
+                    <span class="text-input">
+                      Дата
+                      <span class="graphic-icon"></span>
+                    </span>
                     <input class="control-delivery-input control-date-input" type="text" aria-label="Дата." name="date" required placeholder="01.04.2020">
                   </div>
                   <div class="frame-delivery-input frame-telephone-input">
@@ -361,11 +364,14 @@
                 </div>
                 <div class="delivery-inputs-container">
                   <div class="frame-delivery-input frame-address-input">
-                    <span class="text-input">Адрес</span>
+                    <span class="text-input">
+                      Адрес
+                      <span class="graphic-icon"></span>
+                    </span>
                     <input class="control-delivery-input control-address-input" type="text" aria-label="Адрес." name="address" required placeholder="ул. Большая Конюшенная, 19/8">
                   </div>
                 </div>
-                <button class="button subscription-form-button" type="submit">Отправить</button>
+                <button class="button button-overall-size button-outline-pink subscription-form-button" type="submit">Отправить</button>
               </form>
             </div>
           </div>
@@ -378,7 +384,7 @@
             <span class="feedback-text">Для заказов по телефону:</span>
             <a class="link contacts-phone feedback-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <span class="feedback-text">(с 10 до 20 ежедневно)</span>
-            <button class="button feedback-button" type="button">Форма обратной связи</button>
+            <button class="button button-overall-size button-outline-pink feedback-button" type="button">Форма обратной связи</button>
           </div>
         </section>
       </main>

@@ -15,7 +15,7 @@
       <header class="page-header">
         <h1 class="visually-hidden">Интернет-магазин мороженого «Глейси».</h1>
         <nav class="page-navigation">
-          <a class="link page-navigation-link-logo" href="#">
+          <a class="link page-navigation-link-logo" href="index.html">
             <img class="page-navigation-logo" src="/images/Gllacy-logo.svg" width="137" height="57" alt="Логотип «Глейси».">
           </a>
           <div class="navigation-services-container">
@@ -157,37 +157,39 @@
         </ul>
         <h2 class="main-catalog-title">Сливочное мороженое</h2>
         <section class="filter-products">
-          <div class="sorting-container">
-            <h3 class="sorting-container-title">Сортировка:</h3>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">по популярности</option>
-              <option value="rating">по рейтингу</option>
-              <option value="expensive">сначала дороже</option>
-              <option value="cheap">сначала дешевле</option>
-            </select>
-          </div>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="sorting-container">
+              <h3 class="sorting-container-title">Сортировка:</h3>
+              <div class="select-container">
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="popular">по популярности</option>
+                  <option value="rating">по рейтингу</option>
+                  <option value="expensive">сначала дороже</option>
+                  <option value="cheap">сначала дешевле</option>
+                </select>
+              </div>
+            </div>
             <fieldset class="filter-products-group filter-container filter-container-range-scale">
-              <legend class="filter-title">Цена:</legend>
+              <div class="filter-title-container">
+                <legend class="filter-title">Цена:</legend>
+                <label>
+                  <input class="range-scale-input range-scale-input-from" type="text" required name="price-from" placeholder="100">
+                  <span class="range-scale-input-text">₽</span>
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </label>
+                <label>
+                  <input class="range-scale-input range-scale-input-to" type="text" required name="price-to" placeholder="500">
+                  <span class="range-scale-input-text">₽</span>
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </label>
+              </div>
               <div class="range-scale filter-container">
-                <div class="range-scale-container range-scale-container-from">
-                  <label>
-                    <input class="range-scale-input range-scale-input-from" type="text" required name="price-from" placeholder="100 ₽">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </label>
-                  <button type="button" class="range-toggle">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                </div>
-                <div class="range-scale-container range-scale-container-to">
-                  <label>
-                    <input class="range-scale-input range-scale-input-to" type="text" required name="price-to" placeholder="500 ₽">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </label>
-                  <button type="button" class="range-toggle">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
+                <button type="button" class="button range-toggle range-scale-from">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button type="button" class="button range-toggle range-scale-to">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
               </div>
             </fieldset>
             <fieldset class="filter-products-group filter-container filter-container-fat-content">
@@ -263,7 +265,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button button-line filter-products-button" type="submit">Применить</button>
+            <button class="button button-overall-size button-outline-white filter-products-button" type="submit">Применить</button>
           </form>
         </section>
         <section class="catalog-creamy-ice-cream">
@@ -271,131 +273,167 @@
           <div class="products-cards">
             <ul class="clear-list products-cards-list">
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-raspberry.jpg" width="168" height="168" alt="Малиновое мороженое.">
-                  </div>
-                  <h3 class="product-title">Малинка</h3>
-                  <p class="product-description">Сливочное мороженое с малиновым джемом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-raspberry.jpg" width="168" height="168" alt="Малиновое мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Малинка</a>
+                <p class="product-description">Сливочное мороженое с малиновым джемом</p>
+                <div class="product-information-container">
                   <span class="product-price">310 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-pistachio.jpg" width="168" height="168" alt="Фисташковое мороженое.">
-                  </div>
-                  <h3 class="product-title">Фисташка</h3>
-                  <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-pistachio.jpg" width="168" height="168" alt="Фисташковое мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Фисташка</a>
+                <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
+                <div class="product-information-container">
                   <span class="product-price">340 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-blueberry.jpg" width="168" height="168" alt="Черничное мороженое.">
-                  </div>
-                  <h3 class="product-title">Черника</h3>
-                  <p class="product-description">Крем-брюле с черничным джемом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-blueberry.jpg" width="168" height="168" alt="Черничное мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Черника</a>
+                <p class="product-description">Крем-брюле с черничным джемом</p>
+                <div class="product-information-container">
                   <span class="product-price">330 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="catalog.html">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-bubble-gum.jpg" width="168" height="168" alt="Бабл-гам мороженое.">
-                  </div>
-                  <h3 class="product-title">Бабл-гам</h3>
-                  <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-bubble-gum.jpg" width="168" height="168" alt="Бабл-гам мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Бабл-гам</a>
+                <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
+                <div class="product-information-container">
                   <span class="product-price">320 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-blackberry.jpg" width="168" height="168" alt="Ежевичное мороженое.">
-                  </div>
-                  <h3 class="product-title">Ежевика</h3>
-                  <p class="product-description">Сливочное мороженое с ежевичным джемом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-blackberry.jpg" width="168" height="168" alt="Ежевичное мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Ежевика</a>
+                <p class="product-description">Сливочное мороженое с ежевичным джемом</p>
+                <div class="product-information-container">
                   <span class="product-price">330 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-banana.jpg" width="168" height="168" alt="Банановое мороженое.">
-                  </div>
-                  <h3 class="product-title">Банан</h3>
-                  <p class="product-description">Сливочный пломбир с банановым вкусом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-banana.jpg" width="168" height="168" alt="Банановое мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Банан</a>
+                <p class="product-description">Сливочный пломбир с банановым вкусом</p>
+                <div class="product-information-container">
                   <span class="product-price">340 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-chocolate.jpg" width="168" height="168" alt="Шоколадное мороженое.">
-                  </div>
-                  <h3 class="product-title">Шоколадка</h3>
-                  <p class="product-description">Классический шоколадный пломбир</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-chocolate.jpg" width="168" height="168" alt="Шоколадное мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Шоколадка</a>
+                <p class="product-description">Классический шоколадный пломбир</p>
+                <div class="product-information-container">
                   <span class="product-price">270 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-strawberry.jpg" width="168" height="168" alt="Клубничное мороженое.">
-                  </div>
-                  <h3 class="product-title">Клубничка</h3>
-                  <p class="product-description">Сливочный пломбир с клубничным вкусом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-strawberry.jpg" width="168" height="168" alt="Клубничное мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Клубничка</a>
+                <p class="product-description">Сливочный пломбир с клубничным вкусом</p>
+                <div class="product-information-container">
                   <span class="product-price">300 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-lemon.jpg" width="168" height="168" alt="Лимонное мороженое.">
-                  </div>
-                  <h3 class="product-title">Лимон</h3>
-                  <p class="product-description">Освежающий лимонный сорбет</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-lemon.jpg" width="168" height="168" alt="Лимонное мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Лимон</a>
+                <p class="product-description">Освежающий лимонный сорбет</p>
+                <div class="product-information-container">
                   <span class="product-price">310 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-menthol.jpg" width="168" height="168" alt="Ментоловое мороженое.">
-                  </div>
-                  <h3 class="product-title">Ментол</h3>
-                  <p class="product-description">Сливочный пломбир с ментоловым сиропом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-menthol.jpg" width="168" height="168" alt="Ментоловое мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Ментол</a>
+                <p class="product-description">Сливочный пломбир с ментоловым сиропом</p>
+                <div class="product-information-container">
                   <span class="product-price">320 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-nut.jpg" width="168" height="168" alt="Фисташковое мороженое.">
-                  </div>
-                  <h3 class="product-title">Орешек</h3>
-                  <p class="product-description">Фисташковый пломбир с шоколадным сиропом</p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-nut.jpg" width="168" height="168" alt="Фисташковое мороженое.">
+                </div>
+                <a class="link product-title" href="catalog.html">Орешек</a>
+                <p class="product-description">Фисташковый пломбир с шоколадным сиропом</p>
+                <div class="product-information-container">
                   <span class="product-price">360 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
               <li class="product-card-item">
-                <a class="link product-card" href="#">
-                  <div class="product-image-container">
-                    <img class="product-image" src="/images/products/product-creme-brulee.jpg" width="168" height="168" alt="Классическое мороженое крем-брюле.">
-                  </div>
-                  <h3 class="product-title">Крем-брюле</h3>
-                  <p class="product-description">Классическое крем-брюле </p>
+                <div class="product-image-container">
+                  <img class="product-image" src="/images/products/product-creme-brulee.jpg" width="168" height="168" alt="Классическое мороженое крем-брюле.">
+                </div>
+                <a class="link product-title" href="catalog.html">Крем-брюле</a>
+                <p class="product-description">Классическое крем-брюле </p>
+                <div class="product-information-container">
                   <span class="product-price">280 ₽/кг</span>
-                </a>
+                  <button class="button button-into-basket" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#FCFCFC" fill-rule="evenodd" d="M1.1667 1.25a.6667.6667 0 0 0 0 1.3333h1.7712l.4675 2.3354a.664.664 0 0 0 .0106.0531l.9674 4.8333.0001.0006a1.8254 1.8254 0 0 0 1.8183 1.4691h5.6207a1.8256 1.8256 0 0 0 1.8185-1.4697l.001-.005.9271-4.8614a.6669.6669 0 0 0-.6549-.7915H4.6107l-.4726-2.3614a.6667.6667 0 0 0-.6537-.5358H1.1667ZM5.691 9.5444l-.8134-4.0639h8.2308l-.7756 4.0669a.4923.4923 0 0 1-.4918.3942v-.0001H6.1962v-.0001l-.0128.0002a.4922.4922 0 0 1-.4922-.3962l-.0002-.001Zm-1.1336 3.961c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Zm6.3733 0c0-.6879.5577-1.2457 1.2457-1.2457.688 0 1.2457.5578 1.2457 1.2457 0 .688-.5577 1.2457-1.2457 1.2457-.688 0-1.2457-.5577-1.2457-1.2457Z" clip-rule="evenodd"/></svg>
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
           <div class="buttons-container">
-            <button type="button" class="button loading-button">Показать еще</button>
+            <button type="button" class="button button-overall-size button-outline-white loading-button">Показать еще</button>
             <div class="pagination-container">
-              <a class="link pagination-link pagination-button pagination-link-current" href="#">
+              <a class="link pagination-link pagination-link-left pagination-link-current" href="#">
                 <span class="visually-hidden">Назад</span>
               </a>
               <ol class="pagination clear-list">
@@ -415,7 +453,7 @@
                   <a class="link pagination-link-item pagination-link-item-active" href="#">5</a>
                 </li>
               </ol>
-              <a class="link pagination-link pagination-button pagination-button-right" href="#">
+              <a class="link pagination-link pagination-link-right" href="#">
                 <span class="visually-hidden">Вперёд</span>
               </a>
             </div>
@@ -427,25 +465,25 @@
         <div class="footer-container-left">
           <ul class="clear-list footer-social-list">
             <li class="footer-social-item">
-              <a class="link button-social button-social-telegram" href="https://t.me/htmlacademy">
+              <a class="link link-social link-social-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="link button-social button-social-vk" href="https://vk.com/htmlacademy">
+              <a class="link link-social link-social-vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ВКонтакте.</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="link button-social button-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="link link-social link-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб.</span>
               </a>
             </li>
           </ul>
         </div>
         <div class="footer-container-center">
-          <ul class="page-footer-list">
-            <li class="page-footer-item">Для поставщиков</li>
+          <ul class="clear-list page-footer-list">
+            <li class="page-footer-item bold-font">Для поставщиков</li>
             <li class="page-footer-item">Наши документы</li>
             <li class="page-footer-item">О производстве</li>
             <li class="page-footer-item">Экологические стандарты</li>
@@ -453,7 +491,6 @@
         </div>
         <div class="footer-container-right">
           <a class="link website-link" href="https://htmlacademy.ru/">
-            <svg></svg>
             <span class="visually-hidden">Логотип HTML Academy.</span>
           </a>
           <p class="website-link-description">Сделано в .html academy © 2021</p>
