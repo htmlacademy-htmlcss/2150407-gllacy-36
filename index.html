@@ -148,9 +148,15 @@
           <h2 class="visually-hidden">Популярные товары.</h2>
           <div class="slider-container">
             <button class="button slider-button slider-prev" type="button">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.86474 13.1352C9.12443 13.3949 9.54549 13.3949 9.80519 13.1352C10.0649 12.8755 10.0649 12.4545 9.80519 12.1948L5.60391 7.99351L9.80523 3.79219C10.0649 3.53249 10.0649 3.11144 9.80522 2.85174C9.54553 2.59204 9.12447 2.59204 8.86477 2.85174L4.19606 7.52045C4.19511 7.52139 4.19417 7.52233 4.19322 7.52328C3.93352 7.78298 3.93352 8.20403 4.19322 8.46373L8.86474 13.1352Z" fill="currentColor"/>
+              </svg>
               <span class="visually-hidden">Предыдущий товар.</span>
             </button>
             <button class="button slider-button slider-next" type="button">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.86474 13.1352C9.12443 13.3949 9.54549 13.3949 9.80519 13.1352C10.0649 12.8755 10.0649 12.4545 9.80519 12.1948L5.60391 7.99351L9.80523 3.79219C10.0649 3.53249 10.0649 3.11144 9.80522 2.85174C9.54553 2.59204 9.12447 2.59204 8.86477 2.85174L4.19606 7.52045C4.19511 7.52139 4.19417 7.52233 4.19322 7.52328C3.93352 7.78298 3.93352 8.20403 4.19322 8.46373L8.86474 13.1352Z" fill="currentColor"/>
+              </svg>
               <span class="visually-hidden">Следующий товар.</span>
             </button>
             <ul class="clear-list slider-list">
@@ -409,33 +415,34 @@
         </div>
         <div class="footer-container-center">
           <ul class="clear-list page-footer-list">
-            <li class="page-footer-item bold-font">Для поставщиков</li>
-            <li class="page-footer-item">Наши документы</li>
-            <li class="page-footer-item">О производстве</li>
-            <li class="page-footer-item">Экологические стандарты</li>
+            <li class="page-footer-item bold-font"><a class="link page-footer-link" href="#">Для поставщиков</a></li>
+            <li class="page-footer-item"><a class="link page-footer-link" href="#">Наши документы</a></li>
+            <li class="page-footer-item"><a class="link page-footer-link" href="#">О производстве</a></li>
+            <li class="page-footer-item"><a class="link page-footer-link" href="#">Экологические стандарты</a></li>
           </ul>
         </div>
         <div class="footer-container-right">
           <a class="link website-link" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Логотип HTML Academy.</span>
           </a>
-          <p class="website-link-description">Сделано в<a class="link" href="https://htmlacademy.ru/">.html academy</a>© 2021</p>
+          <p class="website-description">Сделано в<a class="link website-link-description" href="https://htmlacademy.ru/">.html academy</a>© 2021</p>
         </div>
       </footer>
       <!--модальное окно-->
       <div class="modal-container modal-container-close">
-        <div class="modal modal-delivery">
+        <div class="modal modal-feedback">
           <div class="modal-content-container">
-            <button class="modal-close-button" type="button">
+            <button class="button modal-close-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill="#2D3440" fill-rule="evenodd" d="M12.89 2.05a.67.67 0 0 0-.95-.94L7 6.06 2.05 1.1a.67.67 0 0 0-.94.94L6.06 7 1.1 11.94a.67.67 0 1 0 .94.95L7 7.94l4.94 4.95a.67.67 0 1 0 .95-.95L7.94 7l4.95-4.95Z" clip-rule="evenodd"/></svg>
               <span class="visually-hidden">Закрыть</span>
             </button>
             <h2 class="modal-title">Мы обязательно ответим вам!</h2>
               <div class="modal-form-container">
                 <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="control-modal-input input-image-username" type="text" aria-label="Ваше имя и фамилия." name="username" required placeholder="Имя и фамилия">
-                  <input class="input-field" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="email@example.com">
-                  <input class="control-modal-input input-image-username" type="text" aria-label="Комментарий к заказу." name="comment" placeholder="В свободной форме">
-                  <button class="button modal-button" type="submit">Отправить</button>
+                  <input class="input-field control-modal-input input-image-username" type="text" aria-label="Ваше имя и фамилия." name="username" required placeholder="Имя и фамилия">
+                  <input class="input-field control-modal-input" type="email" name="email" aria-label="Введите ваш e-mail." required placeholder="email@example.com">
+                  <input class="input-field control-modal-input input-image-text" type="text" aria-label="Комментарий к заказу." name="comment" placeholder="В свободной форме">
+                  <button class="button button-overall-size button-outline-pink modal-button" type="submit">Отправить</button>
                 </form>
               </div>
           </div>
