@@ -22,6 +22,15 @@
   font-display: swap;
 }
 
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 html {
   height: 100%;
 }
@@ -422,11 +431,11 @@ body {
 }
 
 .page-navigation-button-search:disabled,
-.page-navigation-button-access:disabled {
+.page-navigation-button-access:disabled,
+.page-navigation-button-basket:disabled {
   background: rgba(252, 252, 252, 0.3);
   opacity: 0.4;
   outline: 2px solid #fcfcfc;
-  border-radius: 20px;
 }
 
 .navigation-container-phone {
@@ -2553,4 +2562,39 @@ padding: 79px 0 0 72px;
 .modal-button {
   margin-left: auto;
   width: 152px;
+}
+
+.button.is-loading {
+  display: inline-flex;
+  align-items: center;
+}
+
+.button.is-loading::after {
+  content: "";
+  display: inline-flex;
+  margin-left: 9px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(36, 36, 36, 0.24);
+  border-bottom-color: #242424;
+  border-radius: 50%;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.additional-button.is-loading::after {
+  content: "";
+  display: inline-flex;
+  margin-left: 9px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-bottom-color: rgba(36, 36, 36, 0.6);
+  border-radius: 50%;
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
