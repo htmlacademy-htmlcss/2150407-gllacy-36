@@ -182,7 +182,6 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
   width: 1170px;
-  flex: 1 0 auto;
 }
 
 .page-navigation {
@@ -787,11 +786,13 @@ body {
 /* основное содержимое index */
 
 .main-index {
+  flex-grow: 1;
   margin: 0 auto;
   width: 1170px;
 }
 
 .main-catalog {
+  flex-grow: 1;
   margin: 0 auto;
   width: 1170px;
 }
@@ -2206,7 +2207,6 @@ padding: 79px 0 0 72px;
   justify-content: space-between;
   margin: 48px auto;
   width: 1170px;
-  flex: 0 0 auto;
 }
 
 .footer-container-left {
