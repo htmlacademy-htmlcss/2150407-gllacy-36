@@ -40,9 +40,12 @@ body {
   font-size: 16px;
   line-height: 22px;
   height: 100%;
-  margin: 0;
   color: #2d3440;
-  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
 }
 
 .pink-background {
@@ -163,14 +166,6 @@ body {
   color: #b9b9b9;
   background: #e7e7e7;
   outline: 4px solid rgba(252, 252, 252, 0.4);
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100%;
-  margin: 0 auto;
 }
 
 .section-title {
@@ -848,7 +843,7 @@ body {
 .slider-prev {
   position: absolute;
   top: 235px;
-  left: 530px;
+  left: 527px;
 }
 
 .slider-next {
@@ -856,7 +851,7 @@ body {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   top: 235px;
-  left: 855px;
+  left: 852px;
 }
 
 .slider-list {
