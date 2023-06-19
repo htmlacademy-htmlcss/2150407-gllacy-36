@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 22px;
   height: 100%;
@@ -91,7 +91,7 @@ body {
   text-decoration: none;
   border: none;
   background-color: transparent;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 22px;
   padding: 0;
@@ -182,7 +182,7 @@ body {
 }
 
 .input-field {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
 }
 
 /* шапка сайта */
@@ -500,7 +500,7 @@ body {
 }
 
 .input-field-search::-webkit-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -509,7 +509,7 @@ body {
 }
 
 .input-field-search::-moz-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -518,7 +518,7 @@ body {
 }
 
 .input-field-search:-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -527,7 +527,7 @@ body {
 }
 
 .input-field-search::-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -536,7 +536,7 @@ body {
 }
 
 .input-field-search::placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -606,7 +606,7 @@ body {
 }
 
 .input-field-login::-webkit-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -615,7 +615,7 @@ body {
 }
 
 .input-field-login::-moz-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -624,7 +624,7 @@ body {
 }
 
 .input-field-login:-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -633,7 +633,7 @@ body {
 }
 
 .input-field-login::-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -642,7 +642,7 @@ body {
 }
 
 .input-field-login::placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1372,7 +1372,7 @@ padding: 79px 0 0 72px;
 }
 
 .input-blog::-webkit-input-placeholder {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1380,7 +1380,7 @@ padding: 79px 0 0 72px;
 }
 
 .input-blog::-moz-placeholder {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1388,7 +1388,7 @@ padding: 79px 0 0 72px;
 }
 
 .input-blog:-ms-input-placeholder {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1396,7 +1396,7 @@ padding: 79px 0 0 72px;
 }
 
 .input-blog::-ms-input-placeholder {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1404,7 +1404,7 @@ padding: 79px 0 0 72px;
 }
 
 .input-blog::placeholder {
-  font-family: 'Inter';
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1570,7 +1570,7 @@ padding: 79px 0 0 72px;
 }
 
 .control-delivery-input::-webkit-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1579,7 +1579,7 @@ padding: 79px 0 0 72px;
 }
 
 .control-delivery-input::-moz-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1588,7 +1588,7 @@ padding: 79px 0 0 72px;
 }
 
 .control-delivery-input:-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1597,7 +1597,7 @@ padding: 79px 0 0 72px;
 }
 
 .control-delivery-input::-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1606,7 +1606,7 @@ padding: 79px 0 0 72px;
 }
 
 .control-delivery-input::placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1694,7 +1694,7 @@ padding: 79px 0 0 72px;
 
 .breadcrumbs {
   max-width: 600px;
-  margin-top: 25px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1738,7 +1738,6 @@ padding: 79px 0 0 72px;
 }
 
 .main-catalog-title {
-  margin-top: 15px;
   margin: 15px 0 25px;
   font-weight: 900;
   font-size: 32px;
@@ -1746,7 +1745,7 @@ padding: 79px 0 0 72px;
 }
 
 .catalog-creamy-ice-cream {
-  margin-bottom: 125px;
+  margin-bottom: 80px;
 }
 
 .filter-products {
@@ -1774,11 +1773,14 @@ padding: 79px 0 0 72px;
   line-height: 20px;
 }
 
+.sorting-container-title {
+  margin-bottom: 12px;
+}
+
 .select-control {
   position: relative;
-  padding-left: 16px;
   padding: 8px 63px 8px 16px;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   color: #2d3440;
   width: 196px;
@@ -1810,7 +1812,7 @@ padding: 79px 0 0 72px;
   padding: 0;
   margin: 0;
   width: 30px;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1832,7 +1834,7 @@ padding: 79px 0 0 72px;
 }
 
 .range-scale-input::-webkit-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1841,7 +1843,7 @@ padding: 79px 0 0 72px;
 }
 
 .range-scale-input::-moz-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1850,7 +1852,7 @@ padding: 79px 0 0 72px;
 }
 
 .range-scale-input:-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1859,7 +1861,7 @@ padding: 79px 0 0 72px;
 }
 
 .range-scale-input::-ms-input-placeholder {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1869,7 +1871,7 @@ padding: 79px 0 0 72px;
 
 .range-scale-input::placeholder,
 .range-scale-input-text {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: "Inter", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1951,6 +1953,14 @@ padding: 79px 0 0 72px;
   background-color: #2d3440;
 }
 
+.range-toggle:disabled {
+  background: #b9b9b9;
+}
+
+.range-toggle:disabled::before {
+  background: #e7e7e7;
+}
+
 .range-scale-from {
   -webkit-transform: translate(40px, 2px);
           transform: translate(40px, 2px);
@@ -1970,7 +1980,7 @@ padding: 79px 0 0 72px;
 .filter-products-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 17px;
 }
 
 .filter-products-list {
@@ -2430,7 +2440,7 @@ padding: 79px 0 0 72px;
   opacity: 0.3;
 }
 
-.modal-close-button:active {
+.modal-close-button:disabled {
   opacity: 0.1;
   background: #b9b9b9;
 }
