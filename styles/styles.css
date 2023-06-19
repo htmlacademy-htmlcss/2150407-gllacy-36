@@ -905,7 +905,7 @@ padding: 79px 0 0 72px;
   align-items: center;
   max-width: 367px;
   max-height: 507px;
-  overflow: hidden;
+  object-fit: contain;
   z-index: 1;
 }
 
@@ -942,6 +942,7 @@ padding: 79px 0 0 72px;
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
+  overflow: hidden;
 }
 
 .slider-footer {
